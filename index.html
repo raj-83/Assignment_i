@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Virtual Mobile Number</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: #007bff;
+            color: white;
+        }
+        .slider {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .slider img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .video-container video {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .faq {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .faq-item h3 {
+            cursor: pointer;
+            color: #007bff;
+        }
+        .hidden {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .video-container video, .slider {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>UK Virtual Mobile Number</h1>
+        <p>Get your UK Virtual Number at just £1.25 per week!</p>
+    </div>
+    
+    <div class="slider">
+        <div><img src="https://source.unsplash.com/800x400/?technology,phone" alt="Slide 1"></div>
+        <div><img src="https://source.unsplash.com/800x400/?mobile,communication" alt="Slide 2"></div>
+        <div><img src="https://source.unsplash.com/800x400/?network,connection" alt="Slide 3"></div>
+    </div>
+    
+    <div class="video-container">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>Is it safe to use a Virtual Mobile Number? <i class="fas fa-chevron-down"></i></h3>
+            <p class="hidden">Yes, it is completely safe as it provides high security and privacy.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do I need to keep the app running in the background? <i class="fas fa-chevron-down"></i></h3>
+            <p class="hidden">No, calls and messages are forwarded in real time even if the app is closed.</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 UK Virtual Mobile Number | All rights reserved.</p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false
+            });
+            
+            $('.faq-item h3').click(function() {
+                $(this).next('p').slideToggle();
+                $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>
